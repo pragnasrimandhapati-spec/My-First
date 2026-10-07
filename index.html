@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ee">
+  <meta name="description" content="Join us as we celebrate our new home. We can't wait to welcome you!">
+  <title>Mandhapati's HouseWarming Ceremony</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="opening-screen" id="openingScreen" aria-labelledby="openingTitle">
+    <div class="opening-ornament" aria-hidden="true">✿</div>
+    <p class="eyebrow">WITH JOY IN OUR HEARTS</p>
+    <h1 id="openingTitle">You're warmly invited</h1>
+    <p class="opening-subtitle">to celebrate a beautiful new beginning</p>
+    <button class="button-primary open-button" id="openInvitation" type="button">Open Invitation <span>✿</span></button>
+    <p class="opening-from">With love, Mr Samba Siva Rao<br>&amp; Mrs. Rama Devi</p>
+  </div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container"><a class="navbar-brand" href="#home"><span class="brand-mark">⌂</span> A NEW CHAPTER</a>
+      <a class="nav-rsvp" href="#rsvp">RSVP <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+  <main id="home">
+    <section class="hero container-fluid px-0">
+      <div class="hero-image" role="img" aria-label="Warm, sunlit home with inviting greenery"></div>
+      <div class="hero-content container">
+        <div class="hero-card">
+          <p class="eyebrow"><span></span> A LITTLE NOTE FROM US <span></span></p>
+          <h1 class="invitation-title">Mandhapati's<br><em>HouseWarming</em><br>Ceremony</h1>
+          <p class="hero-copy">And we'd love to make one with you.</p>
+          <p class="host-names">Hosted with love by<br><strong>Mr Samba Siva Rao &amp; Mrs. Rama Devi</strong></p>
+          <a class="button-primary" href="#details">Come celebrate <span>↓</span></a>
+        </div>
+        <div class="hero-stamp"><span>NEW<br>HOME</span><b>✳</b></div>
+      </div>
+      <div class="hero-caption">A PLACE TO GATHER · A PLACE TO GROW</div>
+    </section>
+
+    <section class="welcome section-pad" id="details">
+      <div class="container text-center">
+        <p class="eyebrow">WITH FULL HEARTS & OPEN DOORS</p>
+        <h2>We found our <em>place.</em></h2>
+        <p class="welcome-copy">After boxes, paint swatches, and a few too many trips to the hardware store, our new home is ready for its favorite people. Please join us for an afternoon of good food, happy stories, and a proper housewarming.</p>
+        <div class="flourish">✳</div>
+      </div>
+    </section>
+
+    <section class="event-section section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="event-photo"><div class="photo-note">make yourself<br><em>at home</em> <span>♡</span></div></div>
+          </div>
+          <div class="col-lg-6">
+            <p class="eyebrow">THE IMPORTANT BITS</p>
+            <h2>Come on <em>in.</em></h2>
+            <p class="event-intro">Save the afternoon—we're saving you a seat.</p>
+            <div class="detail-list">
+              <div class="detail-item"><span class="detail-icon">◷</span><div><small>WHEN</small><strong>Saturday, June 20, 2026</strong><span>2:00 – 6:00 in the afternoon</span></div></div>
+              <div class="detail-item"><span class="detail-icon">⌂</span><div><small>WHERE</small><strong>Our new place</strong><span>24 Garden Lane, Austin, TX 78704</span></div></div>
+              <div class="detail-item"><span class="detail-icon">✳</span><div><small>THE VIBE</small><strong>Come as you are</strong><span>Backyard bites, cold drinks & good company</span></div></div>
+            </div>
+            <div class="address-actions">
+              <button type="button" class="text-link" id="copyAddress">Copy address <span>↗</span></button>
+              <a class="text-link" target="_blank" rel="noopener" href="https://maps.google.com/?q=24+Garden+Lane+Austin+TX+78704">Open map <span>↗</span></a>
+              <button type="button" class="text-link" id="calendarButton">Add to calendar <span>↗</span></button>
+            </div>
+            <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp-section section-pad" id="rsvp">
+      <div class="container">
+        <div class="rsvp-card row g-0">
+          <div class="col-lg-5 rsvp-side"><p class="eyebrow">WE HOPE YOU CAN MAKE IT</p><h2>There's room<br>for <em>one more.</em></h2><p>Let us know by June 13 so we can save you a plate.</p><div class="rsvp-doodle">✳</div></div>
+          <div class="col-lg-7 rsvp-form-wrap">
+            <form id="rsvpForm" novalidate>
+              <div class="mb-4"><label for="guestName" class="form-label">YOUR NAME</label><input class="form-control" id="guestName" name="name" type="text" placeholder="The name on our guest list" required></div>
+              <div class="mb-4"><label for="guestEmail" class="form-label">EMAIL ADDRESS</label><input class="form-control" id="guestEmail" name="email" type="email" placeholder="you@example.com" required></div>
+              <div class="mb-4"><label class="form-label" for="guestCount">HOW MANY OF YOU?</label><select class="form-select" id="guestCount" name="guests"><option value="1">Just me</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option></select></div>
+              <fieldset class="mb-4"><legend class="form-label">WILL YOU BE JOINING US?</legend><div class="attendance-options"><label class="choice"><input type="radio" name="attendance" value="yes" checked><span>Count me in <b>♡</b></span></label><label class="choice"><input type="radio" name="attendance" value="no"><span>Can't make it <b>☼</b></span></label></div></fieldset>
+              <div class="mb-4"><label for="guestNote" class="form-label">A NOTE FOR US <span class="optional">(OPTIONAL)</span></label><textarea class="form-control" id="guestNote" name="note" rows="2" placeholder="Dietary needs, a song request, or just a hello..."></textarea></div>
+              <button class="button-primary submit-button" type="submit">Send our RSVP <span>↗</span></button>
+              <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+              <p class="form-small">This demo shows your RSVP here; connect a form service to receive submissions.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-section section-pad" id="feedback">
+      <div class="container">
+        <div class="feedback-heading text-center"><p class="eyebrow">A LITTLE SOMETHING FROM YOU</p><h2>How do you like our <em>home?</em></h2><p>Your thoughts would mean the world to us.</p></div>
+        <div class="feedback-card row g-0">
+          <div class="col-lg-5 rating-panel"><span class="rating-flower" aria-hidden="true">✿</span><p class="eyebrow">THE HOUSEWARMING POLL</p><h3>Rate our new home</h3><p>Choose a score from 1 to 10.</p><label for="homeRating" class="visually-hidden">Rate the house from 1 to 10</label><div class="rating-picker"><input type="range" class="form-range" min="1" max="10" step="1" value="8" id="homeRating"><output id="ratingValue" for="homeRating">8 <small>/ 10</small></output></div><button class="button-primary" type="button" id="saveRating">Save my rating <span>♡</span></button><p id="ratingMessage" class="feedback-message" role="status" aria-live="polite"></p></div>
+          <div class="col-lg-7 review-panel"><p class="eyebrow">LEAVE US A NOTE</p><h3>Tell us what you think</h3><p>We'd love to hear your favorite part of the house or share any suggestions.</p><form id="reviewForm"><label for="reviewText" class="form-label">YOUR REVIEW</label><textarea id="reviewText" class="form-control review-input" rows="5" maxlength="500" placeholder="Write your review here..." required></textarea><div class="review-footer"><small><span id="reviewCount">0</span>/500</small><button class="button-primary" type="submit">Send review <span>↗</span></button></div><p id="reviewMessage" class="feedback-message" role="status" aria-live="polite"></p></form><div id="savedReview" class="saved-review" aria-live="polite"></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="closing section-pad text-center"><p class="eyebrow">OUR DOOR IS OPEN</p><h2>See you <em>soon.</em></h2><p>With love, <strong>Mr Samba Siva Rao &amp; Mrs. Rama Devi</strong></p><span class="closing-flower">✳</span></section>
+  </main>
+  <footer><div class="container d-flex justify-content-between align-items-center"><span>MADE WITH LOVE & A LITTLE BIT OF SPACKLE</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
